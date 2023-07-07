@@ -1,1 +1,15 @@
+main {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.button {
+  padding: 10px 20px;
+  background-color: purple;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
 
+.button:hover {
+  background-color: #aaa;
+}
