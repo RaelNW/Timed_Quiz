@@ -8,49 +8,78 @@
   </head>
   <body>
     <header>
-
+      <button class="start" id="startButton">Start</button>
     </header>
-    <main>
-      <h1>Inside which HTML element do we put the JavaScript?</h1>
-        <ol class="quiz1">
-          <li class="button" id="1">javascript></li>
-          <li class="button" id="2">js</li>
-          <li class="button" id="3">script</li>
-          <li class="button" id="4">scripting</li>
+   
+    <main >
+
+      <section class="quiz1">      
+        <h1 id="question1">Inside which HTML element do we put the JavaScript?</h1>
+        <ol id="answers1">
+          <button class="button" id="1_1">javascript></button>
+          <button class="button" id="2">js</button>
+          <button class="button" id="a1">script</button>
+          <button class="button" id="4">scripting</button>
         </ol>
-      <h1> What does CSS stand for?</h1>
-        <ol class="quiz2">
-          <li class="button" id="1">Computer Style Sheets</li>
-          <li class="button" id="2">Cascading Style Sheets</li> /*answer*/
-          <li class="button" id="3">Colorful Style Sheets</li>
-          <li class="button" id="4">Creative Style Sheets</li>
+      </section>
+
+      <section class="quiz2">
+        <h1 id="question"> What does CSS stand for?</h1>
+        <ol id="answers">
+          <button class="button" id="1">Computer Style Sheets</button>
+          <button class="button" id="a2">Cascading Style Sheets</button>
+          <button class="button" id="3">Colorful Style Sheets</button>
+          <button class="button" id="4">Creative Style Sheets</button>
         </ol>
-        <ol class="quiz3">
-          <li class="button" id="1">answer1</li>
-          <li class="button" id="2">answer1</li>
-          <li class="button" id="3">answer1</li>
-          <li class="button" id="4">answer1</li>
+      </section>
+
+      <section class="quiz4">
+        <h1 id="question">JavaScript is the same as Java</h1>
+        <ol id="answers">
+          <button class="button" id="1">True</button>
+          <button class="button" id="a4">False</button>
         </ol>
-      <h1>JavaScript is the same as Java</h1>
-        <ol class="quiz4">
-          <li class="button" id="1">True</li>
-          <li class="button" id="2">False</li>
+      </section>
+
+      <section class="quiz5">
+        <h1 id="question">All HTML tags have an end tag</h1>
+        <ol id="answers">
+          <button class="button" id="1">True</button>
+          <button class="button" id="a5">False</button>
         </ol>
-        <ol class="quiz5">
-          <li class="button" id="1">answer1</li>
-          <li class="button" id="2">answer1</li>
-          <li class="button" id="3">answer1</li>
-          <li class="button" id="4">answer1</li>
-        </ol>
-      <h1>How can you add a comment in a JavaScript?</h1>
-        <ol class="quiz6">
-          <li class="button" id="1">This is a comment</li>
-          <li class="button" id="2">"This is a comment"</li>
-          <li class="button" id="3">/This is a comment</li>
-          <li class="button" id="4">//This is a comment</li>
-        </ol>
+      </section>
+
+        <section  class="quiz6">      
+          <h1 id="question">The property in CSS used to change the background color of an element is -</h1>
+          <ol id="answers">
+            <button class="button" id="1">bgcolor</button>
+            <button class="button" id="2">color</button>
+            <button class="button" id="a6">background-color</button>
+            <button class="button" id="4">All of the above</button>
+          </ol>
+        </section>
+
+        <section class="quiz7">
+          <h1 id="question">The HTML attribute used to define the inline styles is?</h1>
+              <ol id="answers">
+                <button class="button" id="a7">style</button>
+                <button class="button" id="2">styles</button>
+                <button class="button" id="3">class</button>
+                <button class="button" id="4">None of the above</button>
+              </ol>
+         </section>
+         
+        <div id="timer">Time: <span id="time">60</span></div>
+        
+        <div id="game-over" style="display: none;">
+          <h2>Game Over!</h2>
+          <p>Your score: <span id="score">0</span></p>
+          <input type="text" id="initials" placeholder="Enter your initials">
+          <button id="save">Save</button>
+        </div>
+
     </main>
 
-    <script src="Timed_Quiz/assets/js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
